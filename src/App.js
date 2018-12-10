@@ -12,7 +12,11 @@ class App extends Component {
     return (
       <Router>
       <div className="App">
-        <header className="App-header">PC Bug App</header>
+        <header className="App-header">
+       {/*  <button type="button" class="btn btn-primary .navbar-right">Primary</button> */}
+        PC Bug App
+        </header>
+       
         <Route path="/" exact={true} component={BugSummaryTable}/>
         <Route path="/developerDashboard"  exact= {true} component={DeveloperDashboard}
         render={(props) => <DeveloperDashboard {...props} developerName='vagrawal2'/>}
